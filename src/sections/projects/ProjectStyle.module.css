@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    text-align: center;
+
+    img{
+        max-width: 250px;
+        align-self:center;
+        background-color: var(--project-card-bg);
+        border-radius: 30px;
+
+    }
+    a{
+        width: fit-content;
+        text-decoration: none;
+        color: #222;
+        transition: transform 200ms ease-in-out;
+    }
+     a:hover{
+        transform: scale(1.10);
+     }
+     
+}
+.projectContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+ }
+
+ 
+@media(width>=800px){
+    .container{
+        padding-top: none;
+        gap: 0px;
+    }
+    .projectContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 20px;
+    }
+}

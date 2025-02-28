@@ -1,0 +1,13 @@
+.conatiner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+
+    
+}
+.p{
+    font-size: 6px;
+    color: var(--footer-text-color);
+    
+}
